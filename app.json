@@ -1,11 +1,11 @@
 {
     "name": "STEFANIE",
-    "description": "Amazone Alexa Is Powerfull whatsapp bot For Whatsapp",
+    "description": "Stefanie new Is Powerfull whatsapp bot For Whatsapp",
     "logo": "https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg",
     "keywords": ["whatsapp", "userbot", "java", "button bot", "whatsapp", "api", "ai", "asena", "bug", "free rdp" ],
-    "repository": "https://github.com/xmain12/354xxmj",
+    "repository": "https://github.com/xmain12/ales",
     "website":   "wa",
-    "success_url": "https://github.com/xmain12/354xxmj",
+    "success_url": "https://github.com/xmain12/ales",
     "stack": "container",
     "env": {
         "NEUTRO_SESSION": {
