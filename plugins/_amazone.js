@@ -36,33 +36,33 @@ if (Config.WORKTYPE == 'private') {
                         HANDLER = '.';
                     }
                     if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🔅 ' + Lang.EXAMPLE + ': ```' + command.usage + '```\n\n';
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + Lang.EXAMPLE + ': ```' + command.usage + '```\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n\n';
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n\n';
                     }
                     if (command.desc == '' && command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.warn + '```\n\n'
                     }
                     if (!command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
                     }
                     if (command.desc == '' && !command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🔅 ' + ' ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
                     }
                     if  (command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n'
                     }
                     if  (!command.desc == '' && !command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
                     }
                 }
             );
 
-            await message.client.sendMessage(message.jid,'*◄ ●●●●●● ◉‍👸◉ ●●●●●● ►*\n💠▬▬ *'+Config.BOT_NAME+'* ▬▬💠\n*◄ ●●●●●● ◉Stefanie◉ ●●●●●● ►*\n*🤖Private BOT*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴛᴇꜰᴀɴɪᴇ\n\n' + CMD_HELP, MessageType.text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.AMAZONE, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./Anazone/Stefanie.png')}}}});
+            await message.client.sendMessage(message.jid,'*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ *'+Config.BOT_NAME+'* ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*',  MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ *'+Config.BOT_NAME+'* ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nHi *user!*,\n*'+wish+'*\n\n*◆ BOT INFO ◆*\n\n```▣ Developer:``` *Kaweesha Chamod*\n```▣ Owner:``` *'+Config.OWNER+'*\n```▣ Contact Owner:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ Language:``` *'+language+'*\n```▣ Auto Bio:``` *'+auto_bio+'*\n```▣ Antilink:``` *'+anti_link+'*\n```▣ Work Type:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *Commands* ⇓ ∎\n\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴛᴇꜰᴀɴɪᴇ\n\n' + CMD_HELP, MessageType.text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "█━━STEFANIE━━█", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./Anazone/Stefanie.png')}}}});
             await message.client.sendMessage(message.jid, ams, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
             } 
         else {
@@ -170,7 +170,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
             await message.client.sendMessage(
-                message.jid, Config.BOT_NAME + '\n\n  \n' + CMD_HELP, MessageType.text, { contextInfo: { forwardingScore: 5, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.BOT, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./Anazone/Stefanie.png')}}}});
+                message.jid, Config.BOT_NAME + '\n\n  \n' + CMD_HELP, MessageType.text, { contextInfo: { forwardingScore: 5, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "█━━STEFANIE━━█", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./Anazone/Stefanie.png')}}}});
         } 
         else {
             var CMD_HELP = '';
@@ -269,32 +269,32 @@ async function checkImAdmin(message, user = message.client.user.jid) {
                         HANDLER = '.';
                     }
                     if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + Lang.EXAMPLE + ': ```' + command.usage + '```\n\n';
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + Lang.EXAMPLE + ': ```' + command.usage + '```\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n\n';
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n\n';
                     }
                     if (command.desc == '' && command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.warn + '```\n\n'
                     }
                     if (!command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
                     }
                     if (command.desc == '' && !command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
                     }
                     if  (command.desc == '' && command.usage == '' && command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n\n'
                     }
                     if  (!command.desc == '' && !command.usage == '' && !command.warn == '') {
-                        CMD_HELP += '🚀 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '🌟 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
+                        CMD_HELP += '🎯 ' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '\n' + '📝 ' + ' ```' + command.desc + '``` \n' + '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n' + '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n'
                     }
                 }
             );
-            await message.client.sendMessage(message.jid,'*◄ ●●●●●● ◉‍👸◉ ●●●●●●►*\n💠▬▬ *'+Config.BOT_NAME+'* ▬▬💠\n_Public Bot_\n*◄ ●●●●●● ◉Stefanie◉ ●●●●●●►*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴛᴇꜰᴀɴɪᴇ\n\n' + CMD_HELP, MessageType.text, { contextInfo: { forwardingScore: 5, isForwarded: false }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.AMAZONE, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./Anazone/Stefanie.png')}}}});
+            await message.client.sendMessage(message.jid,'*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ *'+Config.BOT_NAME+'* ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*',  MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ *'+Config.BOT_NAME+'* ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nHi *user!*,\n*'+wish+'*\n\n*◆ BOT INFO ◆*\n\n```▣ Developer:``` *Kaweesha Chamod*\n```▣ Owner:``` *'+Config.OWNER+'*\n```▣ Contact Owner:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ Language:``` *'+language+'*\n```▣ Auto Bio:``` *'+auto_bio+'*\n```▣ Antilink:``` *'+anti_link+'*\n```▣ Work Type:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *Commands* ⇓ ∎\n\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴛᴇꜰᴀɴɪᴇ\n\n' + CMD_HELP, MessageType.text, { contextInfo: { forwardingScore: 5, isForwarded: false }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.AMAZONE, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./Anazone/Stefanie.png')}}}});
             await message.client.sendMessage(message.jid, ams, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
               } 
         else {
