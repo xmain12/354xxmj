@@ -20,7 +20,7 @@ ${chalk.blue.bold('ℹ️  Connecting alexa... Please wait.')}`);
 
   conn.on('open', async () => {
     console.log(
-      chalk.green.bold('Alexa QR Code: '),
+      chalk.green.bold('Stefanie QR Code: '),
       'NEUTRO;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
         'base64'
