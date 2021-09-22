@@ -1,3 +1,9 @@
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX
+*/
+
 const Asena = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
@@ -16,8 +22,8 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         l_dsc = 'safe mode on block spm,X links And Bad Word'
         alr_on = '♻safe mode is already open!'
         alr_off = '♻safe mos3 is currently closed!'
-        THERI_on = '*✅Safe Mode Successfuly On*'
-        THERI_off = '*✅Safw Mode Successfuly Off*'
+        THERI_on = '*🔰Safe Mode Successfuly On*'
+        THERI_off = '*⚠Safw Mode Successfuly Off⛊*'
     }
    
     if (config.LANG == 'SI') {
