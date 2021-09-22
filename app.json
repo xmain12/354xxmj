@@ -8,8 +8,8 @@
     "success_url": "https://github.com/xmain12/ales",
     "stack": "container",
     "env": {
-        "NEUTRO_SESSION": {
-            "description": "Type here yours Asena Session.",
+        "STEFANIE_SESSION": {
+            "description": "Type here yours Stefanie Session.",
             "required": true
         },
         "SUDO": {
